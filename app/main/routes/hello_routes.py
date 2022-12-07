@@ -1,6 +1,8 @@
-from app.main.main import app
+from fastapi import APIRouter
+
+HelloWorld = APIRouter(prefix="/hello", tags=["Hello World"])
 
 
-@app.get("/")
+@HelloWorld.get("/")
 def hello_world():
     return {"Hello": "World"}
