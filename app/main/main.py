@@ -1,3 +1,10 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from app.main.config.environment import get_environment_variables
+from app.main.routes import *
+
+env = get_environment_variables()
+
+app = FastAPI(title=env.SERVICE_NAME, version=env.APP_VERSION)
+
+app.include_router(HelloWorld)
