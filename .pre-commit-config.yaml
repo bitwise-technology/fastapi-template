@@ -6,11 +6,10 @@ repos:
       - id: trailing-whitespace
       - id: name-tests-test
       - id: requirements-txt-fixer
-  - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: 'v2.0.0'
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
     hooks:
-      - id: autopep8
-        args: [--in-place]
+      - id: black
   - repo: https://github.com/PyCQA/isort
     rev: '5.10.1'
     hooks:
