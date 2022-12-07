@@ -11,8 +11,8 @@ def get_env_filename():
 
 
 class EnvironmentSettings(BaseSettings):
-    SERVICE_NAME: str = 'Python3 Template Bitwise'
-    APP_VERSION: str = '0.0.1'
+    SERVICE_NAME: str = "Python3 Template Bitwise"
+    APP_VERSION: str = "0.0.1"
 
     class Config:
         env_file = get_env_filename()
