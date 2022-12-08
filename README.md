@@ -12,7 +12,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/bitwise-technology/fastapi-template?style=for-the-badge)](https://github.com/bitwise-technology/fastapi-template/graphs/contributors)
 [![Activity](https://img.shields.io/github/last-commit/bitwise-technology/fastapi-template?style=for-the-badge&label=most%20recent%20activity)](https://github.com/bitwise-technology/fastapi-template/pulse)
 
-> Ao usar este template, não esqueça de alterar as badges acima com o nome da organização e do repositório.
+> When using this template, don't forget to change the above badges with the organization and repository name.
 
 ## License
 
