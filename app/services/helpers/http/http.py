@@ -20,3 +20,7 @@ class HttpStatus:
     @staticmethod
     def ok_200(body: Any) -> HttpResponse:
         return HttpResponse(HTTPStatus.OK, body)
+
+    @staticmethod
+    def created_201(body: Any) -> HttpResponse:
+        return HttpResponse(HTTPStatus.CREATED, body)
