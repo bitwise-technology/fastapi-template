@@ -5,4 +5,5 @@ sigterm = true
 omit =
     *_test.py
     *__init__.py
-    app/main/main.py
+    app/main/*
+    app/domain/*
