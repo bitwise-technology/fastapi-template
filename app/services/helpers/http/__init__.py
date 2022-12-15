@@ -1,1 +1,1 @@
-from .http import HttpResponse, HttpStatus
+from .http import HttpResponse, HttpRequest, HttpStatus
