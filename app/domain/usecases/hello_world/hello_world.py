@@ -1,10 +1,10 @@
 from abc import abstractmethod
 
-from app.domain.usecases.usecase import Usecase
+from app.domain.usecases.usecase import UseCase
 from app.services.helpers.http import HttpResponse
 
 
-class HelloWorld(Usecase):
+class HelloWorld(UseCase):
     @abstractmethod
-    def execute(self) -> HttpResponse:
+    def handle(self) -> HttpResponse:
         raise NotImplementedError()
