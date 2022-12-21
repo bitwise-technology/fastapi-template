@@ -1,1 +1,1 @@
-from .usecase import Usecase
+from .usecase import UseCase

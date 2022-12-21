@@ -4,7 +4,7 @@ from typing import Any
 from app.services.helpers.http import HttpResponse
 
 
-class Usecase(ABC):
+class UseCase(ABC):
     @abstractmethod
-    def execute(self, *args: Any|None) -> HttpResponse:
+    def handle(self, *args: Any) -> HttpResponse:
         raise NotImplementedError("This contract method must be implemented")
