@@ -23,7 +23,7 @@ def test_should_make_http_request_instance():
     assert http_request.header == header
     assert http_request.body == body
     assert http_request.query == query
-    assert repr(http_request) == f"HttpRequest (header={header}, body={body}, query={query})"
+    assert repr(http_request) == f"HttpRequest (header={header}, query={query}, body={body})"
 
 
 def test_should_make_http_response_instance():

@@ -15,16 +15,16 @@ class HttpRequest:
     def __init__(
         self,
         header: Dict|None=None,
-        body: Dict|None=None,
-        query: Dict|None=None
+        query: Dict|None=None,
+        body: Dict|None=None
     ):
         self.header = header
-        self.body = body
         self.query = query
+        self.body = body
 
     def __repr__(self):
         return (
-            f"HttpRequest (header={self.header}, body={self.body}, query={self.query})"
+            f"HttpRequest (header={self.header}, query={self.query}, body={self.body})"
         )
 
 
