@@ -14,9 +14,9 @@ class HttpResponse:
 class HttpRequest:
     def __init__(
         self,
-        header: Dict|None=None,
-        query: Dict|None=None,
-        body: Dict|None=None
+        header: Dict={},
+        query: Dict={},
+        body: Dict={}
     ):
         self.header = header
         self.query = query
