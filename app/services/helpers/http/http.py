@@ -1,5 +1,5 @@
 from http import HTTPStatus
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 
 class HttpResponse:
@@ -12,7 +12,19 @@ class HttpResponse:
 
 
 class HttpRequest:
-    def __init__(self, header: Dict = {}, query: Dict = {}, body: Dict = {}):
+    def __init__(
+        self,
+        header: Optional[Dict] = None,
+        query: Optional[Dict] = None,
+        body: Optional[Dict] = None,
+    ):
+        if header is None:
+            header = {}
+        if query is None:
+            query = {}
+        if body is None:
+            body = {}
+
         self.header = header
         self.query = query
         self.body = body
