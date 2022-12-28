@@ -11,6 +11,17 @@
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/bitwise-technology/fastapi-template?style=for-the-badge)](https://github.com/bitwise-technology/fastapi-template/pulls?q=is%3Apr+is%3Aclosed)
 [![GitHub contributors](https://img.shields.io/github/contributors/bitwise-technology/fastapi-template?style=for-the-badge)](https://github.com/bitwise-technology/fastapi-template/graphs/contributors)
 [![Activity](https://img.shields.io/github/last-commit/bitwise-technology/fastapi-template?style=for-the-badge&label=most%20recent%20activity)](https://github.com/bitwise-technology/fastapi-template/pulse)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=coverage)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=bugs)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=bitwise-technology_backend-python3-boilerplate&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=bitwise-technology_backend-python3-boilerplate)
 
 > When using this template, don't forget to change the above badges with the organization and repository name.
 
