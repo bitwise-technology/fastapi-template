@@ -2,42 +2,39 @@ from http import HTTPStatus
 
 from faker import Faker
 
-from app.services.helpers.http.http import (HttpRequest, HttpResponse,
-                                            HttpStatus)
+from app.services.helpers.http.http import HttpRequest, HttpResponse, HttpStatus
 
 sut = HttpStatus()
 fake = Faker()
 
 
 def test_should_make_http_request_instance():
-    header = { fake.word(): fake.word() }
+    header = {fake.word(): fake.word()}
     body = fake.json()
-    query = { fake.word(): fake.word() }
+    query = {fake.word(): fake.word()}
 
-    http_request = HttpRequest(
-        header=header,
-        body=body,
-        query=query
-    )
+    http_request = HttpRequest(header=header, body=body, query=query)
 
     assert http_request.header == header
     assert http_request.body == body
     assert http_request.query == query
-    assert repr(http_request) == f"HttpRequest (header={header}, query={query}, body={body})"
+    assert (
+        repr(http_request)
+        == f"HttpRequest (header={header}, query={query}, body={body})"
+    )
 
 
 def test_should_make_http_response_instance():
     status_code = fake.random_int()
     body = fake.json()
 
-    http_response = HttpResponse(
-        status_code=status_code,
-        body=body
-    )
+    http_response = HttpResponse(status_code=status_code, body=body)
 
     assert http_response.status_code == status_code
     assert http_response.body == body
-    assert repr(http_response) == f"HttpResponse (status_code={status_code}, body={body})"
+    assert (
+        repr(http_response) == f"HttpResponse (status_code={status_code}, body={body})"
+    )
 
 
 def test_should_return_ok_200_status_code_and_body():

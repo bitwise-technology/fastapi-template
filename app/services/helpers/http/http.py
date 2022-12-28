@@ -3,7 +3,7 @@ from typing import Any, Dict
 
 
 class HttpResponse:
-    def __init__(self, status_code: int, body: Any=None) -> None:
+    def __init__(self, status_code: int, body: Any = None) -> None:
         self.status_code = status_code
         self.body = body
 
@@ -12,12 +12,7 @@ class HttpResponse:
 
 
 class HttpRequest:
-    def __init__(
-        self,
-        header: Dict={},
-        query: Dict={},
-        body: Dict={}
-    ):
+    def __init__(self, header: Dict = {}, query: Dict = {}, body: Dict = {}):
         self.header = header
         self.query = query
         self.body = body
@@ -34,6 +29,7 @@ class HttpStatus:
     Returns:
         HttpResponse: status_code and body
     """
+
     @staticmethod
     def ok_200(body: Any) -> HttpResponse:
         return HttpResponse(HTTPStatus.OK, body)
