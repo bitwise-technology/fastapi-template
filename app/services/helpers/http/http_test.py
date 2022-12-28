@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from faker import Faker
 
-from app.services.helpers.http.http import HttpStatus, HttpRequest, HttpResponse
-
+from app.services.helpers.http.http import (HttpRequest, HttpResponse,
+                                            HttpStatus)
 
 sut = HttpStatus()
 fake = Faker()

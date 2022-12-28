@@ -1,9 +1,10 @@
 from typing import Union
+
 from fastapi import APIRouter, Response
+
+from app.domain.usecases.hello_world import HelloParams
 from app.main.adapters import fast_api_adapter
 from app.main.factories import hello_world_factory
-from app.domain.usecases.hello_world import HelloParams
-
 
 HelloWorld = APIRouter(prefix="/hello", tags=["Hello World"])
 

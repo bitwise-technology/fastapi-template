@@ -1,6 +1,7 @@
 from typing import Union
-from app.domain.usecases.hello_world import HelloWorld as HelloWorldContract
+
 from app.domain.usecases.hello_world import HelloParams
+from app.domain.usecases.hello_world import HelloWorld as HelloWorldContract
 from app.services.helpers.http.http import HttpResponse, HttpStatus
 
 
