@@ -3,7 +3,7 @@ from typing import Any, Dict
 
 
 class HttpResponse:
-    def __init__(self, status_code: int, body: Any = None) -> None:
+    def __init__(self, status_code: int, body: Any = None):
         self.status_code = status_code
         self.body = body
 
