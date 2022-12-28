@@ -1,3 +1,5 @@
+from http import HTTPStatus
+
 from app.services.usecases.hello_world import HelloWorld
 
 sut = HelloWorld()
@@ -6,5 +8,5 @@ sut = HelloWorld()
 def test_should_return_200_when_hello_world():
     result = sut.handle(None)
 
-    assert result.status_code == 200
+    assert result.status_code == HTTPStatus.OK
     assert result.body == "Hello World"
