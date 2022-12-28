@@ -24,6 +24,15 @@ def test_should_make_http_request_instance():
     )
 
 
+def test_should_make_http_request_with_all_params_none_instance():
+    http_request = HttpRequest(header=None, body=None, query=None)
+
+    assert http_request.header == {}
+    assert http_request.body == {}
+    assert http_request.query == {}
+    assert repr(http_request) == "HttpRequest (header={}, query={}, body={})"
+
+
 def test_should_make_http_response_instance():
     status_code = fake.random_int()
     body = fake.json()
