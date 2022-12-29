@@ -1,1 +1,1 @@
-from .hello_routes import *
+from .hello_routes import HelloWorld
