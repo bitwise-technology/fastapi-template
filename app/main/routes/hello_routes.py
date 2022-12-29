@@ -1,5 +1,3 @@
-from typing import Union
-
 from fastapi import APIRouter, Response
 
 from app.domain.usecases.hello_world import HelloParams
