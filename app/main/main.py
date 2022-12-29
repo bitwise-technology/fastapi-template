@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from app.main.config.environment import get_environment_variables
-from app.main.routes import *
+from app.main.routes import HelloWorld
 
 env = get_environment_variables()
 
