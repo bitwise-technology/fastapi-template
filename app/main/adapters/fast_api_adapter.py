@@ -15,9 +15,9 @@ def fast_api_adapter(
 
     Args:
         factory (UseCase): Factory UseCases
-        body (Union[Any, None], optional): Request Body Params. Defaults to None.
-        query (Union[Any, None], optional): Request Query Params. Defaults to None.
-        path (Union[Any, None], optional): Request Path Params. Defaults to None.
+        body (Any | None, optional): Request Body Params. Defaults to None.
+        query (Any | None, optional): Request Query Params. Defaults to None.
+        path (Any | None, optional): Request Path Params. Defaults to None.
 
     Returns:
         HttpResponse: Object with status_code and body
