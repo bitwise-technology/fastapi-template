@@ -1,4 +1,4 @@
-from typing import Any, Union
+from typing import Any
 
 from app.domain.usecases import UseCase
 from app.services.helpers.http import HttpResponse
@@ -6,9 +6,9 @@ from app.services.helpers.http import HttpResponse
 
 def fast_api_adapter(
     factory: UseCase,
-    body: Union[Any, None] = None,
-    query: Union[Any, None] = None,
-    path: Union[Any, None] = None,
+    body: Any | None = None,
+    query: Any | None = None,
+    path: Any | None = None,
 ) -> HttpResponse:
     """Adapter that passes the factory parameters passed
     to the use case and returns the status code and response body.
