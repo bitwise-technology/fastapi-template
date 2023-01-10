@@ -37,7 +37,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          pytest --cov-config=.coveragerc --cov-report=xml --doctest-modules --cov=. app/
+          pytest --cov-config=.coveragerc --cov-report=xml --doctest-modules --cov=. src/
       - name: Archive coverage results
         uses: actions/upload-artifact@v3
         with:

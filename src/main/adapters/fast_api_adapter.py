@@ -1,7 +1,7 @@
 from typing import Any
 
-from app.domain.usecases import UseCase
-from app.services.helpers.http import HttpResponse
+from src.domain.usecases import UseCase
+from src.services.helpers.http import HttpResponse
 
 
 def fast_api_adapter(

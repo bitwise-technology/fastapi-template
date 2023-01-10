@@ -1,6 +1,6 @@
 from http import HTTPStatus
 
-from app.services.usecases.hello_world import HelloWorld
+from src.services.usecases.hello_world import HelloWorld
 
 sut = HelloWorld()
 

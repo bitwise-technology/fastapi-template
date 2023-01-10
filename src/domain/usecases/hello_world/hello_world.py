@@ -2,8 +2,8 @@ from abc import abstractmethod
 
 from pydantic import BaseModel
 
-from app.domain.usecases.usecase import UseCase
-from app.services.helpers.http import HttpResponse
+from src.domain.usecases.usecase import UseCase
+from src.services.helpers.http import HttpResponse
 
 
 class HelloParams(BaseModel):

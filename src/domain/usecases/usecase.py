@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, Union
 
-from app.services.helpers.http import HttpResponse
+from src.services.helpers.http import HttpResponse
 
 
 class UseCase(ABC):
